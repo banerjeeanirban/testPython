@@ -1,3 +1,5 @@
+#this is method #1 for requests library to do http calls
+
 import requests
 
 response = unirest.post("https://NasaAPIdimasV1.p.rapidapi.com/getEPICEarthImagery",
