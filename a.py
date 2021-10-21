@@ -1,7 +1,6 @@
-#this is method #1 for requests library to do http calls
-
 import requests
 
+#this is method #1 for unirests library to do http calls
 response = unirest.post("https://NasaAPIdimasV1.p.rapidapi.com/getEPICEarthImagery",
   headers={
     "X-RapidAPI-Host": "NasaAPIdimasV1.p.rapidapi.com",
@@ -10,8 +9,8 @@ response = unirest.post("https://NasaAPIdimasV1.p.rapidapi.com/getEPICEarthImage
   }
 )
 
+#this is method #1 for requests library to do http calls
 params = {"words": 10, "paragraphs": 1, "format": "json"}
-
 response = requests.get(f"https://alexnormand-dino-ipsum.p.rapidapi.com/", params=params,
  headers={
    "X-RapidAPI-Host": "alexnormand-dino-ipsum.p.rapidapi.com",
@@ -51,30 +50,29 @@ elif (response.status_code == 404:
     print("Result not found!")
     # Code here will react to failed requests
 
+#this is method #1 for django, urllib2, HttpResponse library to do http calls
 from django.http import HttpResponse
-
 import urllib2
-
 import json
 
 if not ('HTTP_AUTHORIZATION' in request.META.keys()):
 
-return HttpResponse('NO AUTH HEADER PROVIDED')
+  return HttpResponse('NO AUTH HEADER PROVIDED')
 
 elif (request.META['HTTP_AUTHORIZATION'] == 'Bearer YourAuthorizationKey123':
 
-# Validation passed - Proceed with whatever else you want to do
+  # Validation passed - Proceed with whatever else you want to do
 
 if 'Authorization' in request.headers: # Authorization header exists
 
-#do something here
+  #do something here
 
 pass
 
 
 else: # Authorization header not exists
 
-#do something here
+  #do something here
 
 pass
 
