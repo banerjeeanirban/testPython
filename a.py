@@ -1,9 +1,9 @@
 import requests
 
 #this is method #1 for unirests library to do http calls
-response = unirest.post("https://NasaAPIdimasV1.p.rapidapi.com/getEPICEarthImagery",
+response = unirest.post("https://api.salesforce.com/getEPICEarthImagery",
   headers={
-    "X-RapidAPI-Host": "NasaAPIdimasV1.p.rapidapi.com",
+    "X-RapidAPI-Host": "api.salesforce.com",
     "X-RapidAPI-Key": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
     "Content-Type": "application/x-www-form-urlencoded"
   }
